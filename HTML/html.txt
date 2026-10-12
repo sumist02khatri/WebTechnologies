@@ -1,0 +1,4 @@
+shift+!
+html:5
+
+use either of them to generate pre code for html

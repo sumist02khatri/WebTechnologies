@@ -1,0 +1,40 @@
+#flex-container{
+    height: 500px;
+    width: 500px;
+    background-color: wheat;
+    display: flex;
+     /* justify-content: space-evenly; */
+    /* align-items: flex-start; */
+    /* flex-direction: column-reverse;  */
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+
+}
+.child1{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+}
+
+.child2{
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+.child3{
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+}
+
+.child4{
+    height: 50px;
+    width: 50px;
+    background-color: greenyellow;
+}
+
+.child5{
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+}

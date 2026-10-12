@@ -1,0 +1,41 @@
+#parent {
+    height: 200px;
+    width: 500px;
+    background-color: lightblue;
+}
+.child1{
+    height: 50px;
+    width: 50px;
+    background-color: lightgreen;  
+}
+.child2{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(204, 231, 0);
+    /*position is used to move the element
+     from its current position*/
+    /* position: relative;
+    top: 50px;
+    left: 50px; */
+    position: absolute;
+    top: 100px;
+    left: 50px;
+
+        /*
+             CSS position explained in simple words:
+             - static: the normal position. The element follows the usual page flow.
+             - relative: keeps its normal space, but can be moved from that space
+                 with top, right, bottom, or left.
+             - absolute: removes the element from the normal flow and places it
+                 using top, right, bottom, or left. It is positioned relative to the
+                 nearest ancestor that is not static; otherwise, the page is used.
+             - fixed: stays in the same place on the screen while the page scrolls.
+                 Useful for buttons or menus that should always be visible.
+             - sticky: behaves normally until a scroll limit is reached, then stays
+                 fixed there. Useful for headings or navigation bars.
+
+             Use relative when moving an element slightly, absolute when placing it
+             inside a container, fixed for the viewport, and sticky for scrolling.
+        */
+
+}

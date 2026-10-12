@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector in CSS</title>
+    <link rel="stylesheet" href="./selector.css">
+</head>
+
+<body>
+    <!--!Selectors :- which is used to target html element-->
+    <!--!simple selector:- id(#),class(.tagname),grouping(,) universal(*) -->
+    <p id="para"> This is an example of simple selector in CSS. Simple selectors are used to target specific HTML
+        elements based
+    </p>
+    <span class="span"> This is an example of simple selector in CSS. Simple selectors are used to target specific HTML
+        elements based
+    </span>
+    <h1> This is an example of simple selector in CSS. Simple selectors are used to target specific HTML
+        elements based
+    </h1>
+
+    <b>hellow sumist</b>
+    <br><br>
+    <i>hellow sumist</i>
+    <br><br>
+    <h3><b> sumist kumar</h3>
+    <br><br>
+    <h4><i>sumist kumar</i></h4>
+    <br><br>
+
+    <!--!Combinator:-descendant(space), child(>), adjacent sibling(+), general sibling(~) -->
+    <!--Direct childrens are para1,section,para3 to the div tag-->
+    <!-- indirect children are para2 -->
+    <!--Descendant are direct and indirect children to div tag-->
+    <!--Child are para1 and para3 to the div tag-->
+    <!--Adjacent siblings are para4 to div tag-->
+    <!--General siblings are para4 and para5 to div tag-->
+    <div>
+        <p>para1</p>
+        <section>
+            <p>para2</p>
+        </section>
+        <p>para3</p>
+    </div>
+    <p>para4</p>
+    <p>para5</p>
+    <br><br>
+
+    <!--!pseudo-element selector(::):-first-line, ::first-letter, ::before, ::after, ::selection ,::marker -->
+    <p class="p1"> This is an example of pseudo-class selector in CSS. Pseudo-class selectors are used to target specific states or conditions of HTML elements,
+        such as when an element is hovered over, focused, or visited. 
+
+    </p>
+
+    <ol>
+        <li>hello</li>
+        <li>jello</li>
+        <li>sello</li>
+    </ol>
+    <!--!pseudo-class selector(:):- :hover, :focus, :active, :visited, :link ,:first-child, :last-child , :nth-child() -->
+    <div>
+        <p class="p2">1</p>
+        <p class="p2">2</p>
+        <p class="p2">3</p>
+        <p class="p2">10</p>
+        <p class="p2">21</p>
+        <p class="p2">31</p>
+    </div>
+
+    <a href="https://www.amazon.com">AMAZON</a>
+    <a href="https://www.dell.com">DELL</a>
+
+    <input type="text">
+
+</body>
+
+</html>

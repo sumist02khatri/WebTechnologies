@@ -1,0 +1,101 @@
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 90px;
+
+        }
+
+        .card1,
+        .card3 {
+            width: 200px;
+            height: 220px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 1px;
+            font-size: 17px;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card2 {
+            width: 200px;
+            height: 220px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: pink;
+            border: 1px solid pink;
+            color: white;
+            border-radius: 1px;
+            font-size: 17px;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            font-size: 9px;
+            font-family: sans-serif;
+            width: 100px;
+            height: 25px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: auto auto 0;
+        }
+
+        .button2 {
+            font-size: 9px;
+            font-family: sans-serif;
+            width: 100px;
+            height: 25px;
+            background-color: white;
+            color: pink;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin: auto auto 0;
+        }
+
+        p {
+            font-size: 9px;
+            font-family: sans-serif;
+        }
+
+        
+        .card2 i
+         {
+            align-self: center;
+            display: block;
+            font-size: 29px;
+            color: white;
+            /* margin-bottom: 8px; */
+        }
+        .card1 i,
+        .card3 i
+         {
+            align-self: center;
+            display: block;
+            font-size: 29px;
+            color: black;
+            /* margin-bottom: 8px; */
+        }
+
+
+        
+        .card1:hover,
+        .card2:hover,
+        .card3:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }  
+        
+        
+        

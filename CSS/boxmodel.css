@@ -1,0 +1,33 @@
+p{
+    /* background-color: blue; */
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0); */
+    border-left: 5px solid rgb(255, 196, 0);
+    border-right: 7px dotted rgb(0, 255, 0);     
+    border-top: 10px dashed rgb(246, 255, 0);
+    border-bottom: 15px double rgb(255, 0, 43);
+    /* padding :- which is used to get space b/w border and content */
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    /* padding can be specified in four different ways:
+    one value means all side padding is same
+    two value means first value is for top and bottom and second value is for left and right
+    three value means first value is for top, second value is for left and right and third value is for bottom
+    four value means first value is for top, second value is for right, third value is for bottom and fourth value is for left
+    padding can't be negative    
+    */
+    padding: 30px 40px 70px 20px;
+
+    /* margin :- which is used to get space b/w border and other elements */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin can be specified in four different ways:*/
+    margin: 20px 20px 20px 20px;
+    /* margin can be negative */
+
+}

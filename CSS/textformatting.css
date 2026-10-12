@@ -1,0 +1,27 @@
+div{
+    height: 200px;
+    width:300px;
+    background-color:aquamarine;
+    /* font properties */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(100, 52, 52);
+    font-style: italic;
+    /* text properties */
+    text-decoration: underline;
+    text-align: justify;
+    text-decoration:line-through red dotted  2px;
+    /* x-axis,y-axis,blurness,colorofshadow */
+    text-shadow: 2px 2px 5px yellow;
+    /* x-axis,y-axis,blurness,spread,colorofshadow */
+    box-shadow: 2px 2px 5px 2px red;
+
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    line-height: 20px;
+
+
+
+
+}

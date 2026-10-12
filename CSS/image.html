@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Examples</title>
+    <style>
+        /*
+         * Background-image types:
+         * 1. Local image: url("images/background.jpg")
+         * 2. Online image: url("https://example.com/background.jpg")
+         * 3. Gradient: linear-gradient(...) or radial-gradient(...)
+         * 4. Multiple backgrounds: separate each image with a comma.
+         *
+         * Replace the sample URL below with your own image path.
+         */
+
+        /* Applies an image to the complete page background. */
+        body {
+            margin: 0;
+            min-height: 100vh;
+            color: white;
+            font-family: Arial, sans-serif;
+            background-image: url("https://images.unsplash.com/photo-1500534623283-312aade485b7");
+            background-size: cover;       /* cover, contain, or a custom size */
+            background-position: center;  /* top, bottom, left, right, or center */
+            background-repeat: no-repeat; /* repeat, repeat-x, repeat-y, or no-repeat */
+            background-attachment: fixed; /* scroll or fixed */
+        }
+
+        /* A semi-transparent panel keeps text readable over the image. */
+        .content {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.35);
+        }
+
+        /* A gradient can be used instead of an image or placed above one. */
+        .gradient-example {
+            padding: 1rem;
+            background-image: linear-gradient(90deg, #1d2671, #c33764);
+        }
+
+        /* Multiple backgrounds: the first layer is displayed above the second. */
+        .multiple-background-example {
+            padding: 1rem;
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url("https://images.unsplash.com/photo-1497366754035-f200968a6e72");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- The body uses the background image defined in the <style> tag. -->
+    <main class="content">
+        <section>
+            <h1>Background Image</h1>
+            <p>Use CSS background-image to place an image behind HTML content.</p>
+
+            <!-- This element demonstrates a CSS gradient background. -->
+            <p class="gradient-example">Gradient background example</p>
+
+            <!-- This element demonstrates an image combined with a gradient overlay. -->
+            <p class="multiple-background-example">Multiple backgrounds example</p>
+        </section>
+    </main>
+</body>
+</html>

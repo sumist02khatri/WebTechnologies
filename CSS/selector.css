@@ -1,0 +1,108 @@
+/* !Pseudo-class selectors 
+#para{
+    background-color: red;
+}
+.span{
+    background-color: blue;
+}
+
+h1{
+    background-color: yellow;
+}
+
+*b{
+    background-color: green;
+}
+i{
+    background-color: pink;
+
+}
+
+*{
+    background-color: rgb(243, 222, 184);
+}
+
+h3,h4{
+    background-color: purple;
+}*/
+
+/* !combinator selectors */
+
+/* div p{
+    background-color: red;
+}
+
+div>p{
+    background-color: blue;
+}
+
+div+p{
+    background-color: yellow;
+}
+
+div~p{
+    background-color: green;
+} */
+
+/* !pseudo-element selectors */
+/* .p1::first-letter{
+    color: red;
+    font-size: 30px;
+}   
+.p1::first-line{
+    color: blue;
+    font-size: 20px;
+}
+.p1::before{
+    content: "Before";
+    color: green;
+}
+.p1::after{
+    content: "After";
+    color: yellow;
+}
+.p1::selection{
+    background-color: pink;
+    color: rgb(144, 141, 141);
+}
+
+li::marker{
+    color: rgb(0, 255, 55);
+    font-size: 20px;
+} */
+
+/* !pseudo-class selectors */
+
+.p2:first-child{
+    background-color: red;
+}
+.p2:last-child{
+    background-color: blue;
+}
+/* .p2:nth-child(3){
+    background-color: yellow;
+} */
+
+/* .p2:nth-child(2n){
+    background-color: yellow;
+}  for even children */
+
+.p2:nth-child(2n+1){
+    background-color: yellow;
+}  /* for odd children */
+
+a:visited{
+    color: cyan;
+}
+a:link{
+    color: rgb(255, 125, 89);
+}
+a:active{
+    color: yellow;
+}
+a:hover{
+    color: green;
+}
+input:focus{
+    background-color: red;
+}

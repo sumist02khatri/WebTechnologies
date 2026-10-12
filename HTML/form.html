@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+<!-- Tells the browser that this is a modern HTML5 page. -->
+<html lang="en">
+    <!-- `head` stores page settings and information; it is not visible inside the page. -->
+    <head>
+        <!-- Sets UTF-8 character encoding so letters and common symbols display correctly. -->
+        <meta charset="UTF-8">
+        <!-- `name="viewport"` says which setting this meta tag controls; it helps the page fit phones and other small screens. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- This text appears on the browser tab, not in the page body. -->
+        <title>Form creation using HTML</title>
+    </head>
+
+    <!-- `body` holds everything the visitor can see and use on the webpage. -->
+    <body style="background-color: lightblue; font-family: Arial, sans-serif; text-align: center;">
+        <!-- `form` collects the entered details. `method="post"` sends the submitted data in the request body instead of displaying it in the URL, making it suitable for passwords and larger amounts of data. -->
+         <!-- `enctype="multipart/form-data"` formats the request so form fields and uploaded files can be sent together; it is required when the form contains a file input. -->
+        <form action="./attributes.html"  method="post" enctype="multipart/form-data" >
+            <!-- `fieldset` draws a group around related form controls. -->
+            <fieldset>
+                <!-- `legend` is the heading shown on the border of this fieldset. -->
+                <legend>
+                    <!-- `b` makes the form heading bold. -->
+                    <b>Student Registration Form :</b>
+                    <h1>HELLO STUDENT</h1>
+                </legend>
+
+                <!-- `label` names the box below it. Its `for` value connects it to the input with id="username". -->
+                <label for="username">User Name:</label>
+                <!-- `input` makes a one-line box. `id` is its unique identity and matches the label's `for`; `name` is the field name sent with the form; `required` means it cannot be empty. `text` accepts words, `value` supplies starting text, and `readonly` stops editing it. -->
+                <input type="text" id="username" name="username" value="sumist" readonly required>
+                <!-- `br` starts a new line; two `br` tags make an empty line between form rows. -->
+                <br><br>
+
+                <!-- This label names the email box. `for="mail"` matches the input's `id="mail"`, so clicking this text focuses the box. -->
+                <label for="mail">Email Id:</label>
+                <!-- An email input asks for an email-style address. `id="mail"` connects this box to its label, `name="mail"` is sent with the answer, `placeholder` shows a hint, and `required` means it cannot be empty. -->
+                <input type="email" id="mail" name="mail" required placeholder="Enter your email">
+                <br><br>
+
+                <!-- This label identifies the phone-number box. `for="phone"` matches the input's `id="phone"`, so clicking the label focuses the box. -->
+                <label for="phone">Phone Number:</label>
+                <!-- A tel input is for phone numbers. `id="phone"` connects the label, `name="number"` identifies this answer when sent, `minlength` and `maxlength` require exactly 10 typed characters, and `required` makes this field compulsory. -->
+                <input type="tel" id="phone" name="number" minlength="10" maxlength="10" required>
+                <br><br>
+
+                <!-- This label identifies the date-of-birth control. `for="birth"` matches the input's `id="birth"`. -->
+                <label for="birth">DOB:</label>
+                <!-- A datetime-local input lets the visitor choose a date and time. `id="birth"` links its label, `name="dob"` names the submitted answer, and `autofocus` places the cursor here when the page opens. -->
+                <input type="datetime-local" id="birth" name="dob" autofocus>
+                <br><br>
+
+                <!-- This label names the first age number box. `for="age-first"` matches that input's `id`. -->
+                <label for="age-first">AGE:</label>
+                <!-- A number input is for numbers. `id` links this box to its label, `name` identifies the submitted answer, and `min` and `max` limit the allowed age from 1 to 120. -->
+                <input type="number" id="age-first" name="age" min="1" max="120">
+                <br><br>
+
+                <!-- This label identifies the password box. `for="pwd"` matches the password input's `id="pwd"`. -->
+                <label for="pwd">Password:</label>
+                <!-- A password input hides the characters while they are typed. `id="pwd"` links the label, `name="password"` is sent with the form, `required` makes it compulsory, and `size` sets its visible width. -->
+                <input type="password" id="pwd" name="password" required size="50">
+                <br><br>
+
+                <!-- This label names the second age number box. `for="age-second"` matches that input's `id`. -->
+                <label for="age-second">Age:</label>
+                <!-- This is another number input. `id="age-second"` is different from every other id, while `name="age"` is its submitted field name. -->
+                <input type="number" id="age-second" name="age" min="1" max="120">
+                <br><br>
+
+                <!-- `span` displays a short piece of text without starting a new block; here it labels the gender choices. -->
+                <span>Gender:</span>
+                <!-- A radio input lets the user choose one option. Its `id` connects its own label; both choices use `name="gender"`, so only one can be selected and the chosen value is sent as gender. -->
+                <input type="radio" id="gender-male" name="gender" value="male">
+                <!-- This label makes the word "Male" clickable. Its `for="gender-male"` matches the radio input's `id`. -->
+                <label for="gender-male">Male</label>
+                <!-- This is the other radio option. Its unique `id` connects its label, while the shared `name="gender"` keeps it in the same group. -->
+                <input type="radio" id="gender-female" name="gender" value="female">
+                <!-- This label makes the word "Female" clickable. Its `for="gender-female"` matches the radio input's `id`. -->
+                <label for="gender-female">Female</label>
+                <br><br>
+
+                <!-- This span is the text heading for the skills choices. -->
+                <span>Skills:</span>
+                <!-- A checkbox lets the visitor select this skill independently. Its `id` connects the label; the shared `name="skills"` sends each selected skill under the same field name. -->
+                <input type="checkbox" id="skill-html" name="skills" value="html">
+                <!-- This label selects or clears the HTML checkbox when clicked because `for="skill-html"` matches its `id`. -->
+                <label for="skill-html">HTML</label>
+                <!-- This checkbox represents CSS. Its `id` is unique, and the shared `name="skills"` means more than one skill can be sent. -->
+                <input type="checkbox" id="skill-css" name="skills" value="css">
+                <!-- This label selects or clears the CSS checkbox because `for="skill-css"` matches its `id`. -->
+                <label for="skill-css">CSS</label>
+                <!-- This checkbox represents JavaScript. Its `id` connects the label, and `name="skills"` groups it with the other skills. -->
+                <input type="checkbox" id="skill-javascript" name="skills" value="javascript">
+                <!-- This label selects or clears the JavaScript checkbox because `for="skill-javascript"` matches its `id`. -->
+                <label for="skill-javascript">JAVASCRIPT</label>
+                <br><br>
+
+                <!-- This label tells the visitor what to choose from the dropdown. `for="qualification"` matches the select element's `id`. -->
+                <label for="qualification">Qualification:</label>
+                <!-- `select` creates a dropdown. `id="qualification"` connects it to its label, and `name="qualification"` is the field name sent when the form is submitted. -->
+                <select id="qualification" name="qualification">
+                    <!-- Each `option` is one choice in the dropdown; its `value` is the submitted value. -->
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="CIVIL">CIVIL</option>
+                </select>
+                <br><br>
+
+                <!-- This label identifies the file-upload control. `for="resume"` matches the file input's `id`. -->
+                <label for="resume">Resume:</label>
+                <!-- A file input lets the visitor choose a file. `id="resume"` links the label, `name="document"` identifies the uploaded file when sent, and `accept` suggests PDF, DOC, and DOCX files. -->
+                <input type="file" id="resume" name="document" accept=".pdf,.doc,.docx">
+                <br><br>
+
+                <!-- This label identifies the larger address-writing area. `for="address"` matches the textarea's `id`. -->
+                <label for="address">Address:</label>
+                <!-- `textarea` is a multi-line text box. `id="address"` links the label, `name="address"` identifies the submitted text, and `rows` and `cols` set its approximate visible size. -->
+                <textarea id="address" name="address" rows="5" cols="30"></textarea>
+                <br><br>
+
+                <!-- A submit input sends the completed form. `value` is the text shown on the button. -->
+                <input type="submit" value="Submit">
+                <!-- A reset input returns the form controls to their original values. -->
+                <input type="reset" value="Reset">
+            </fieldset>
+        </form>
+    </body>
+</html>

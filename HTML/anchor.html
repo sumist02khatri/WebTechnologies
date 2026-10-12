@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anchor Tag Examples</title>
+  <style>
+    /* Link states: unvisited = blue, visited = purple, active = red. */
+    a:link { color: blue; }
+    a:visited { color: purple; }
+    a:active { color: red; }
+
+    .button-link {
+      display: inline-block;
+      padding: 10px 16px;
+      color: white !important;
+      background-color: #007bff;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anchor Tag Examples</h1>
+
+  <!-- Link to another page -->
+  <a href="about.html">About Us</a>
+
+  <!-- Absolute URL -->
+  <p><a href="https://www.example.com">Visit Example.com</a></p>
+
+  <!-- Open a link in a new tab -->
+  <p><a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+    Open Example.com in a new tab
+  </a></p>
+
+  <!-- Email and telephone links -->
+  <p><a href="mailto:hello@example.com">Send an email</a></p>
+  <p><a href="tel:+1234567890">Call us</a></p>
+
+  <!-- Link to a section on this page -->
+  <p><a href="#contact">Jump to Contact</a></p>
+
+  <div style="height: 300px;"></div>
+
+  <h2 id="contact">Contact</h2>
+  <p>This section can be reached using an anchor link.</p>
+
+  <!-- Download a file -->
+  <p><a href="files/sample.pdf" download>Download the PDF</a></p>
+
+  <!-- Button-style link -->
+  <p><a class="button-link" href="about.html">Open About Us</a></p>
+
+  <!-- Normal image used as a link -->
+  <p>
+    <a href="https://www.example.com">
+      <img src="https://via.placeholder.com/150" alt="Visit Example.com">
+    </a>
+  </p>
+
+  <!-- Meaning of anchor link colors -->
+  <h2>Link Colors</h2>
+  <ul>
+    <li><strong>Blue:</strong> an unvisited link.</li>
+    <li><strong>Purple:</strong> a link that has been visited.</li>
+    <li><strong>Red:</strong> an active link while it is being clicked.</li>
+  </ul>
+</body>
+</html>
