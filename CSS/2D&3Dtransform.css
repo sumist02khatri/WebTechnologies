@@ -1,0 +1,35 @@
+section{
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    position: relative;
+    top: 200px;
+    left: 100px;
+    /* which is uswd to move element in webpage */
+
+    /*transform x is left and right movement of element in webpage 
+    and transform y is up and down movement of element in webpage */
+    /* transform: translate(50px, 100px); */
+    /* transform: translateX(50px); */
+    /* transform: translateY(100px); */
+
+
+
+
+    /* positive degree means clockwise rotation and negative degree means anticlockwise rotation */
+    /* transform: rotate(350deg); */
+
+    /* transform: rotateY(120deg); */
+    /* transform: rotateX(160deg); */
+    
+    /* sclae is used to increase or decrease the size of element in webpage x is for width and y is for height */
+    /* transform :scale(2,3); */
+    /* transform: scaleX(2); */
+    /* transform:scaleY(3); */
+
+ /*skew is used to slant the element in webpage x is for left and right slanting and y is for up and down slanting */
+    /* transform: skew(30deg); */
+    /* transform: skewX(40deg); */
+    transform: skewY(30deg);
+
+} 

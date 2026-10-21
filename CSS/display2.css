@@ -1,0 +1,17 @@
+p{
+    background-color: pink;
+    display: inline;
+}
+b{
+    background-color: yellow;
+    display: block;
+}
+i{
+    background-color: lightblue;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+section{
+    display:none;
+}

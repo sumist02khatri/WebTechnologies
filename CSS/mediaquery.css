@@ -1,0 +1,12 @@
+#parent{
+        height: 100vh;
+        width: 100%;
+        /* in place of 180 deg you can also write to top, to bottom, to left, to right, to top left, to bottom right etc. */
+        /* background: linear-gradient(180deg, #ff7e5f, #feb47b,red,green,
+        blue,pink, palegoldenrod, yellow, orange, purple, violet); */
+        
+        background:radial-gradient(circle, red, yellow, green, blue,
+         indigo, violet,skyblue, palegoldenrod, pink, orange, purple);
+          border-radius: 50%;
+
+     }

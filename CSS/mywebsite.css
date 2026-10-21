@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.navbar{
+    width: 100%;
+    background-color: #101c28;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    
+}
+
+.navbar h1{
+font-size: 36px;
+}
+
+.navbar nav{
+    display: flex;
+    gap: 40px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:first-child {
+  color: #43c653;
+  border-bottom: 3px solid #43c653;
+  padding-bottom: 15px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #28b84d, #6fd45e);
+  color: white;
+  text-align: center;
+  padding: 95px 20px;
+}
+
+.hero h2 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 25px;
+  margin-bottom: 45px;
+}
+
+.hero button {
+  background-color: white;
+  color: #36b94d;
+  border: none;
+  border-radius: 8px;
+  padding: 18px 50px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+}
+
+.card{
+    width: 350px;
+    min-height: 340px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 45px 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+.icon{
+    width:115px;
+    height:115px;
+    margin:0 auto 28px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:42px;
+    font-weight:bold;
+}
+.card:nth-child(1) .icon {
+  background-color: #dff7e2;
+  color: #35ad4d;
+}
+
+.card:nth-child(2) .icon {
+  background-color: #dcecff;
+  color: #2870bd;
+}
+
+.card:nth-child(3) .icon {
+  background-color: #fff0c9;
+  color: #f0a000;
+}
+
+.card h3{
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.card p{
+   color:#626774;
+   font-size: 20px;
+   line-height: 1.5;
+}
+footer {
+  background-color: #101c28;
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+  font-size: 20px;
+}
